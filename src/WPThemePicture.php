@@ -14,7 +14,7 @@ namespace WaughJ\WPThemePicture
 			unset( $attributes[ 'directory' ] ); // Make sure we don't keep this as an attribute that gets passed into the HTML itself.
 			$attributes[ 'loader' ] = $loader;
 			$picture = self::generate( $src, $extension, $sizes, $attributes );
-			parent::__construct( $picture->getFallbackImage(), $picture->getSources(), $picture->getPictureAttributes()->getAttributes() );
+			parent::__construct( $picture->getFallbackImage(), $picture->getSources(), $picture->getPictureAttributes()->getAttributeValuesMap() );
 		}
 	}
 }
