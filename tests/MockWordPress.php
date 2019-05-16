@@ -35,14 +35,14 @@
 
 	function get_stylesheet_directory()
 	{
-		return getcwd();
+		return getcwd() . '/tests';
 	}
 
 	function wp_upload_dir()
 	{
 		return
 		[
-			'path' => getcwd(),
+			'path' => getcwd() . '/test',
 			'url' => 'https://www.example.com/wp-content/uploads'
 		];
 	}
