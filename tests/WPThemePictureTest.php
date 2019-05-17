@@ -11,7 +11,6 @@ class WPThemePictureTest extends TestCase
 	public function testBasicPicture()
 	{
 		$picture = new WPThemePicture( 'photo', 'jpg', '320w 240h, 800w 400h, 1200w 800h', [ 'directory' => 'img' ] );
-		echo $picture->getHTML();
 		$this->assertStringContainsString( ' src="https://www.example.com/wp-content/themes/example/img/photo-320x240.jpg', $picture->getHTML() );
 		$this->assertStringContainsString( ' media="(max-width:800px)"', $picture->getHTML() );
 		$this->assertStringContainsString( ' media="(min-width:801px)"', $picture->getHTML() );
