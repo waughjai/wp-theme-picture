@@ -37,3 +37,14 @@ An easy way to deal with exceptions:
 	}
 
     $picture->print(); // Will print without versioning for files that can’t be found & won’t throw exception.
+
+## Changelog
+
+### 0.3.0
+* Update to Newest Version o’ HTMLPicture
+
+### 0.2.0
+* Make compatible with new HTMLPicture code
+
+### 0.1.0
+* Initial Release
